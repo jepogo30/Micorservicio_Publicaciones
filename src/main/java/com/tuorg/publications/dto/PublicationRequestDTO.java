@@ -13,7 +13,7 @@ public class PublicationRequestDTO {
     private String content;
 
     @NotNull
-    private Long authorId;
+    private String authorId;
 
  // ===== GETTERS =====
     public String getTitle() {
@@ -24,7 +24,7 @@ public class PublicationRequestDTO {
         return content;
     }
 
-    public Long getAuthorId() {
+    public String getAuthorId() {
         return authorId;
     }
 
@@ -37,7 +37,7 @@ public class PublicationRequestDTO {
         this.content = content;
     }
 
-    public void setAuthorId(Long authorId) {
+    public void setAuthorId(String authorId) {
         this.authorId = authorId;
     }
 }

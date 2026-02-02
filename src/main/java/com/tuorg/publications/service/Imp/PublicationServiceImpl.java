@@ -49,7 +49,7 @@ public class PublicationServiceImpl implements PublicationService {
 @Value("${author.service.url}")
 private String authorServiceUrl;
 
-private void validateAuthor(Long authorId) {
+private void validateAuthor(String authorId) {
     try {
         restTemplate.getForObject(
             authorServiceUrl + "/" + authorId,

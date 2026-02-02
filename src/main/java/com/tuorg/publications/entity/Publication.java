@@ -27,7 +27,7 @@ public class Publication {
     private PublicationStatus status;
 
     @Column(nullable = false)
-    private Long authorId;
+    private String authorId;
 
     // ===== GETTERS =====
     public Long getId() {
@@ -46,7 +46,7 @@ public class Publication {
         return status;
     }
 
-    public Long getAuthorId() {
+    public String getAuthorId() {
         return authorId;
     }
 
@@ -67,7 +67,7 @@ public class Publication {
         this.status = status;
     }
 
-    public void setAuthorId(Long authorId) {
+    public void setAuthorId(String authorId) {
         this.authorId = authorId;
     }
 }

@@ -1,6 +1,7 @@
 package com.tuorg.publications.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/publications")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PublicationController {
 
     private final PublicationService service;
